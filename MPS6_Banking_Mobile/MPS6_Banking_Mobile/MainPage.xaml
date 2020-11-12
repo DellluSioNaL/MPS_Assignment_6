@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MPS6_Banking_Mobile.MainPage">
+
+    <StackLayout>
+        <Frame BackgroundColor="Red" Padding="24" CornerRadius="0">
+            <Label Text="Mobile Banking" HorizontalTextAlignment="Center" TextColor="White" FontSize="36"/>
+        </Frame>
+        
+        <Entry x:Name="DepositAmountEntry" Placeholder="Deposit Amount" Keyboard="Numeric"/>
+        <Entry x:Name="DepositReasonEntry" Placeholder="Reason"/>
+        <Button x:Name="DepositButton" Text="Deposit" Clicked="DepositButton_Clicked" />
+
+    </StackLayout>
+
+</ContentPage>
